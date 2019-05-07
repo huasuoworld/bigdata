@@ -34,4 +34,4 @@ $ kubectl create clusterrolebinding spark-role --clusterrole=edit --serviceaccou
 
 3.
 
-bin/spark-submit --class com.d1miao.Grouping --master k8s://http://192.168.1.5:8080 --deploy-mode cluster --name spark-es-grouping --conf spark.kubernetes.namespace=spark-cluster --conf spark.executor.instances=1 --conf spark.kubernetes.container.image=docker.d1m.cn/spark:latest --conf spark.kubernetes.authenticate.driver.serviceAccountName=spark /opt/spark/examples/jars/spark-es-grouping.jar
+bin/spark-submit --class com.huasuoworld.Grouping --master k8s://http://192.168.1.5:8080 --deploy-mode cluster --name spark-es-grouping --conf spark.kubernetes.namespace=spark-cluster --conf spark.executor.instances=1 --conf spark.kubernetes.container.image=docker.io/huasuoworld/spark:latest --conf spark.kubernetes.authenticate.driver.serviceAccountName=spark /opt/spark/examples/jars/spark-es-grouping.jar
